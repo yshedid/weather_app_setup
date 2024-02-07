@@ -1,8 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:weather_app/models/city_model.dart';
+import 'package:weather_app/services/weather_service.dart';
 
-class WeatherInfoBody extends StatelessWidget {
+class WeatherInfoBody extends StatefulWidget {
   const WeatherInfoBody({Key? key}) : super(key: key);
 
+
+  @override
+  State<WeatherInfoBody> createState() => _WeatherInfoBodyState();
+}
+
+class _WeatherInfoBodyState extends State<WeatherInfoBody> {
+  @override
+  void initState() {
+    super.initState();
+  }
   @override
   Widget build(BuildContext context) {
     return Padding(
